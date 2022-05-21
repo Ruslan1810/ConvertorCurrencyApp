@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ConvertorCurrencyApp</string>
+    <string name="convertor">Конвертор Валют</string>
+
+    <string name="btn_room">Загрузить из Room</string>
+    <string name="btn_firebase">Загрузить из FireBase</string>
+    <string name="currency_char_code_string">Koд</string>
+    <string name="currency_name_string">Наименование</string>
+    <string name="currency_nominal_string">Ном</string>
+    <string name="currency_value_string">Рублей</string>
+    <string name="name_currency">Валюта</string>
+    <string name="currency_rub">Российский рубль</string>
+    <string name="currency_rubs">Российских рублей</string>
+    <string name="calculation">Вычисление</string>
+    <string name="calculate">Вычислить</string>
+    <string name="input">Введите число</string>
+    <string name="current_course">Межбанковский курс:</string>
+    <string name="currency_calculator">КАЛЬКУЛЯТОР ВАЛЮТ</string>
+    <string name="input_number">Введите число</string>
+    <string name="input_number_hint">ввод числа</string>
+    <string name="rub">RUB</string>
+    <string name="_0">0</string>
+    <string name="title">Конвертор валют</string>
+    <string name="start_btn_room">ROOM</string>
+    <string name="toast_enter_name">Введите имя заметки</string>
+    <string name="start_btn_firebase">Firebase</string>
+    <string name="email_hint">email</string>
+    <string name="password_hint">password</string>
+    <string name="start_btn_login">Login</string>
+    <string name="toast_wrong_enter">Введите пароль и почту</string>
+    <string name="btn_add_currency">Добавить</string>
+    <string name="start_label">Что использовать?</string>
+    <string name="detailed">Калькулятор</string>
+</resources>
