@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screens.listCurrencies.ListCurrenciesFragment">
+    tools:context=".presentation.listCurrencies.ListCurrenciesFragment">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/currency_search"

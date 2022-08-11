@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_500"
-    tools:context=".screens.splash.SplashFragment">
+    tools:context=".presentation.splash.SplashFragment">
 
     <TextView
         android:id="@+id/appName"

@@ -1,4 +1,4 @@
-package ru.ruslan.convertorcurrencyapp.screens.splash
+package ru.ruslan.convertorcurrencyapp.presentation.splash
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -36,7 +36,7 @@ class SplashFragment : Fragment() {
 
         //определение ориентации
         if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            mBinding.appName.animate().translationY(-1600f).setDuration(3000).startDelay = 0
+            mBinding.appName.animate().translationY(-1300f).setDuration(3000).startDelay = 0
             mBinding.lottie.animate().translationX(2000F).setDuration(3000).startDelay = 3000
         } else {
             mBinding.appName.animate().translationY(-700f).setDuration(2000).startDelay = 0

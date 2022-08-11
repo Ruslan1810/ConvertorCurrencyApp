@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProject/ConvertorCurrencyApp/app/src/main/res/layout-land/fragment_currency.xml" value="0.23541666666666666" />
+        <entry key="..\:/AndroidProject/ConvertorCurrencyApp/app/src/main/res/layout/activity_main.xml" value="0.2953125" />
+        <entry key="..\:/AndroidProject/ConvertorCurrencyApp/app/src/main/res/layout/fragment_currency.xml" value="0.2953125" />
+        <entry key="..\:/AndroidProject/ConvertorCurrencyApp/app/src/main/res/layout/fragment_splash.xml" value="0.2953125" />
+        <entry key="..\:/AndroidProject/ConvertorCurrencyApp/app/src/main/res/layout/rv_item.xml" value="0.2953125" />
         <entry key="..\:/AndroidProject/LearnKotlin/ConvertorCurrencyApp/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
         <entry key="..\:/AndroidProject/LearnKotlin/ConvertorCurrencyApp/app/src/main/res/layout/fragment_currency.xml" value="0.29551820728291317" />
         <entry key="..\:/AndroidProject/LearnKotlin/ConvertorCurrencyApp/app/src/main/res/layout/fragment_list_currencies.xml" value="0.33" />
@@ -17,7 +22,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

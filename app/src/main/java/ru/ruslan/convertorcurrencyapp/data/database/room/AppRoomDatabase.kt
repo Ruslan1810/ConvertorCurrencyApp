@@ -1,10 +1,10 @@
-package ru.ruslan.convertorcurrencyapp.database.room
+package ru.ruslan.convertorcurrencyapp.data.database.room
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import ru.ruslan.convertorcurrencyapp.database.model.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.domain.models.modelDb.CurrencyDB
 
 @Database(entities = [CurrencyDB::class], version = 3)
 abstract class AppRoomDatabase:RoomDatabase() {

@@ -2,8 +2,8 @@ package ru.ruslan.convertorcurrencyapp.utils
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
-import ru.ruslan.convertorcurrencyapp.screens.MainActivity
-import ru.ruslan.convertorcurrencyapp.database.DatabaseRepository
+import ru.ruslan.convertorcurrencyapp.presentation.MainActivity
+import ru.ruslan.convertorcurrencyapp.domain.repository.DatabaseRepository
 
 lateinit var APP_ACTIVITY: MainActivity
 lateinit var REPOSITORY: DatabaseRepository

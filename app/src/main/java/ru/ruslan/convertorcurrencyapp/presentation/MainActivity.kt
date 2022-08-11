@@ -1,4 +1,4 @@
-package ru.ruslan.convertorcurrencyapp.screens
+package ru.ruslan.convertorcurrencyapp.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,8 @@ import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import ru.ruslan.convertorcurrencyapp.R
-import ru.ruslan.convertorcurrencyapp.database.room.AppRoomDatabase
-import ru.ruslan.convertorcurrencyapp.database.room.AppRoomRepository
+import ru.ruslan.convertorcurrencyapp.data.database.room.AppRoomDatabase
+import ru.ruslan.convertorcurrencyapp.data.repository.AppRoomRepository
 import ru.ruslan.convertorcurrencyapp.databinding.ActivityMainBinding
 import ru.ruslan.convertorcurrencyapp.utils.APP_ACTIVITY
 import ru.ruslan.convertorcurrencyapp.utils.REPOSITORY

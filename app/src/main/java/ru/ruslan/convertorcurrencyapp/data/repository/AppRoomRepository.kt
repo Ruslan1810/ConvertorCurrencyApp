@@ -1,17 +1,17 @@
-package ru.ruslan.convertorcurrencyapp.database.room
+package ru.ruslan.convertorcurrencyapp.data.repository
 
 import androidx.lifecycle.LiveData
-import ru.ruslan.convertorcurrencyapp.database.DatabaseRepository
-import ru.ruslan.convertorcurrencyapp.database.model.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.domain.repository.DatabaseRepository
+import ru.ruslan.convertorcurrencyapp.domain.models.modelDb.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.data.database.room.AppRoomDao
 
 class AppRoomRepository(private val appRoomDao: AppRoomDao): DatabaseRepository {
     override val allCurrencies: LiveData<List<CurrencyDB>>
         get() = appRoomDao.getAllCurrencies()
 
 
-    override suspend fun insertAll(list: List<CurrencyDB>, onSuccess: () -> Unit) {
+    override suspend fun insertAll(list: List<CurrencyDB>) {
         appRoomDao.insertAll(list)
-        onSuccess()
     }
 
     override suspend fun insert(currency: CurrencyDB, onSuccess: () -> Unit) {

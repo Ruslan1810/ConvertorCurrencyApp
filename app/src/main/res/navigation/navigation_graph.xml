@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/currencyFragment"
-        android:name="ru.ruslan.convertorcurrencyapp.screens.currency.CurrencyFragment"
+        android:name="ru.ruslan.convertorcurrencyapp.presentation.currency.CurrencyFragment"
         android:label="fragment_currency"
         tools:layout="@layout/fragment_currency" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/listCurrenciesFragment"
-        android:name="ru.ruslan.convertorcurrencyapp.screens.listCurrencies.ListCurrenciesFragment"
+        android:name="ru.ruslan.convertorcurrencyapp.presentation.listCurrencies.ListCurrenciesFragment"
         android:label="fragment_list_currencies"
         tools:layout="@layout/fragment_list_currencies" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
-        android:name="ru.ruslan.convertorcurrencyapp.screens.splash.SplashFragment"
+        android:name="ru.ruslan.convertorcurrencyapp.presentation.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/startFragment"
-        android:name="ru.ruslan.convertorcurrencyapp.screens.start.StartFragment"
+        android:name="ru.ruslan.convertorcurrencyapp.presentation.start.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action

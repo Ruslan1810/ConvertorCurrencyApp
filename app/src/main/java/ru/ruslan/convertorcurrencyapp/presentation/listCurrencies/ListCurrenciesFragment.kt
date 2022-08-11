@@ -1,4 +1,4 @@
-package ru.ruslan.convertorcurrencyapp.screens.listCurrencies
+package ru.ruslan.convertorcurrencyapp.presentation.listCurrencies
 
 import android.graphics.Color
 import android.os.Bundle
@@ -12,8 +12,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import ru.ruslan.convertorcurrencyapp.R
-import ru.ruslan.convertorcurrencyapp.api.model.Currency
-import ru.ruslan.convertorcurrencyapp.database.model.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.domain.models.modelApi.Currency
+import ru.ruslan.convertorcurrencyapp.domain.models.modelDb.CurrencyDB
 import ru.ruslan.convertorcurrencyapp.databinding.FragmentListCurrenciesBinding
 import ru.ruslan.convertorcurrencyapp.utils.APP_ACTIVITY
 import ru.ruslan.convertorcurrencyapp.utils.transformation
@@ -62,7 +62,7 @@ class ListCurrenciesFragment : Fragment() {
         mObserverListFromApi = Observer { it ->
             val listCustomer = it.map { it.transformation() }
             viewModel.deleteAll()
-            viewModel.insertAll(listCustomer) {}
+            viewModel.insertAll(listCustomer)
         }
 
         mObserverListFromDB = Observer {
@@ -119,6 +119,7 @@ class ListCurrenciesFragment : Fragment() {
         super.onDestroyView()
         mBinding = null
         viewModel.allCurrenciesFromDB.removeObserver(mObserverListFromDB)
+        viewModel.allCurrenciesFromAPI.removeObserver(mObserverListFromApi)
         mRecyclerView.adapter = null
     }
 }

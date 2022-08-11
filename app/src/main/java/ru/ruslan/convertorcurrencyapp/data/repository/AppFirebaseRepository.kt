@@ -1,11 +1,12 @@
-package ru.ruslan.convertorcurrencyapp.database.firebase
+package ru.ruslan.convertorcurrencyapp.data.repository
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import ru.ruslan.convertorcurrencyapp.database.DatabaseRepository
-import ru.ruslan.convertorcurrencyapp.database.model.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.data.database.firebase.AllCurrenciesLiveData
+import ru.ruslan.convertorcurrencyapp.domain.repository.DatabaseRepository
+import ru.ruslan.convertorcurrencyapp.domain.models.modelDb.CurrencyDB
 import ru.ruslan.convertorcurrencyapp.utils.*
 
 class AppFirebaseRepository : DatabaseRepository {
@@ -15,7 +16,7 @@ class AppFirebaseRepository : DatabaseRepository {
 
     override val allCurrencies: LiveData<List<CurrencyDB>> = AllCurrenciesLiveData()
 
-    override suspend fun insertAll(list: List<CurrencyDB>, onSuccess: () -> Unit) {
+    override suspend fun insertAll(list: List<CurrencyDB>) {
         for(currency in list) insert(currency){}
     }
 

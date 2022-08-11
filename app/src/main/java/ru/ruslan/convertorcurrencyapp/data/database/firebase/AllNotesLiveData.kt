@@ -1,10 +1,10 @@
-package ru.ruslan.convertorcurrencyapp.database.firebase
+package ru.ruslan.convertorcurrencyapp.data.database.firebase
 
 import androidx.lifecycle.LiveData
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
-import ru.ruslan.convertorcurrencyapp.database.model.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.domain.models.modelDb.CurrencyDB
 import ru.ruslan.convertorcurrencyapp.utils.REF_DATABASE
 
 class AllCurrenciesLiveData: LiveData<List<CurrencyDB>> () {

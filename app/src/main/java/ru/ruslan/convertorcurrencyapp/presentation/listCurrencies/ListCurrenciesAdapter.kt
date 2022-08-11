@@ -1,4 +1,4 @@
-package ru.ruslan.convertorcurrencyapp.screens.listCurrencies
+package ru.ruslan.convertorcurrencyapp.presentation.listCurrencies
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -11,12 +11,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.rv_item.view.*
 import ru.ruslan.convertorcurrencyapp.R
-import ru.ruslan.convertorcurrencyapp.database.model.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.domain.models.modelDb.CurrencyDB
 import ru.ruslan.convertorcurrencyapp.utils.getIdResource
 import java.util.*
 import kotlin.collections.ArrayList
 
-class ListCurrenciesAdapter(private var listCurrencies:List<CurrencyDB>) :
+class ListCurrenciesAdapter(private var listCurrencies: List<CurrencyDB>) :
     RecyclerView.Adapter<ListCurrenciesAdapter.Holder>(), Filterable {
 
     private var filterListCurrencies = emptyList<CurrencyDB>()

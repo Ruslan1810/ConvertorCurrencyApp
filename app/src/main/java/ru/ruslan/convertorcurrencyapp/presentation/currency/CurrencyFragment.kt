@@ -1,4 +1,4 @@
-package ru.ruslan.convertorcurrencyapp.screens.currency
+package ru.ruslan.convertorcurrencyapp.presentation.currency
 
 import android.os.Bundle
 import android.text.Editable
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import ru.ruslan.convertorcurrencyapp.R
-import ru.ruslan.convertorcurrencyapp.database.model.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.domain.models.modelDb.CurrencyDB
 import ru.ruslan.convertorcurrencyapp.databinding.FragmentCurrencyBinding
 import ru.ruslan.convertorcurrencyapp.utils.getIdResource
 import ru.ruslan.convertorcurrencyapp.utils.showToast
@@ -50,6 +50,11 @@ class CurrencyFragment : Fragment() {
         binding.flagRus.setImageResource(R.drawable.rus)
         binding.flagCountry.setImageResource(getIdResource(charCode))
 
+
+            viewModel.result.observe(this) {
+                binding.outputForCurrency.text = it
+            }
+
         binding.inputForRub.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
                 var strOfInput: String = binding.inputForRub.text.toString()
@@ -69,7 +74,7 @@ class CurrencyFragment : Fragment() {
                         binding.inputForRub.setSelection(binding.inputForRub.text.length)
                     }
                 }
-                binding.outputForCurrency.text = currency.let { viewModel.calculation(it, countRub) }
+                currency.let { viewModel.calculation(it, countRub) }
             }
 
             override fun beforeTextChanged(

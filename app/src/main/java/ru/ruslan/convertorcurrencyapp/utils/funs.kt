@@ -1,8 +1,8 @@
 package ru.ruslan.convertorcurrencyapp.utils
 
 import android.widget.Toast
-import ru.ruslan.convertorcurrencyapp.api.model.Currency
-import ru.ruslan.convertorcurrencyapp.database.model.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.domain.models.modelApi.Currency
+import ru.ruslan.convertorcurrencyapp.domain.models.modelDb.CurrencyDB
 
 fun showToast(message: String) {
     Toast.makeText(APP_ACTIVITY, message, Toast.LENGTH_SHORT).show()

@@ -1,4 +1,4 @@
-package ru.ruslan.convertorcurrencyapp.api.model
+package ru.ruslan.convertorcurrencyapp.domain.models.modelApi
 
 data class Currency(
     var charCode: String,

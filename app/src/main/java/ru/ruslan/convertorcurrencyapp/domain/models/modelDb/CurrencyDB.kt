@@ -1,4 +1,4 @@
-package ru.ruslan.convertorcurrencyapp.database.model
+package ru.ruslan.convertorcurrencyapp.domain.models.modelDb
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

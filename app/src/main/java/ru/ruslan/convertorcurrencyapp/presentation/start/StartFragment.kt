@@ -1,4 +1,4 @@
-package ru.ruslan.convertorcurrencyapp.screens.start
+package ru.ruslan.convertorcurrencyapp.presentation.start
 
 import android.annotation.SuppressLint
 import android.os.Bundle

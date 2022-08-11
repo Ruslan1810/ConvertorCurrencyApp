@@ -1,8 +1,8 @@
-package ru.ruslan.convertorcurrencyapp.database.room
+package ru.ruslan.convertorcurrencyapp.data.database.room
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import ru.ruslan.convertorcurrencyapp.database.model.CurrencyDB
+import ru.ruslan.convertorcurrencyapp.domain.models.modelDb.CurrencyDB
 
 @Dao
 interface AppRoomDao {
